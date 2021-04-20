@@ -1,0 +1,48 @@
+baseurl = "https://www.entrepreneurialopensource.org/"
+DefaultContentLanguage = "en"
+title = "entrepreneurialopensource.org"
+theme = "eclipsefdn-hugo-solstice-theme"
+metaDataFormat = "yaml"
+googleAnalytics = "UA-910670-30"
+disableKinds = []
+themesDir = "node_modules/"
+enableRobotsTXT = true
+pluralizeListTitles = false
+
+[Params]
+  google_tag_manager = "GTM-5WLCZXC"
+  description = ""
+  seo_title_suffix = " | The Eclipse Foundation"
+  keywords = []
+ # logo = ""
+ # favicon = ""
+ # share_img = ""
+  styles = "css/styles.css"
+  gcse = "011805775785170369411:p3ec0igo0qq"
+  js = "js/solstice.js"
+  header_wrapper_class = " featured-section-darken header-default-bg-img"
+  news_count = 3
+  featured_content_publish_target = "eclipse_org"
+  
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  membership_level = "membership_levels"
+  participation_level = "participation_levels"
+
+[Author]
+  name = "Christopher Guindon"
+  website = "https://www.eclipse.org"
+  email = "webdev@eclipse-foundation.org"
+  facebook = "eclipse.org"
+  twitter = "EclipseFdn"
+  youtube = "EclipseFdn"
+  googleplus = "+Eclipse"
+  linkedin = "company/eclipse-foundation/"
+  
+[permalinks]
+  news = "/:sections/:year/:month/:day/:slug/"
+
+[blackfriday]
+  plainIDAnchors = true
+  hrefTargetBlank = true
