@@ -2,6 +2,8 @@
 
 The [entrepreneurialopensource.org](https://entrepreneurialopensource.org) website is generated with [Hugo](https://gohugo.io/documentation/).
 
+The Entrepreneurial Open Source Podcast is where leaders and innovators who've made an impact in the open-source community while growing a profitable business, discuss the power and practical value of open source in business and entrepreneurship.
+
 [![Build Status](https://travis-ci.org/EclipseFdn/entrepreneurialopensource.org.svg?branch=master)](https://travis-ci.org/eclipsefdn/entrepreneurialopensource.org)
 
 ## Getting started
