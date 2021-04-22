@@ -1,0 +1,52 @@
+@import '_variables.less';
+
+.jumbotron-custom {
+  background-image: url('../static/images/banner.png');
+  height: 366px;
+  background-size: cover;
+
+  .logo-ctn {
+    padding: 62px 0 0 102px;
+
+    .guest-btn {
+      cursor: pointer;
+      position: absolute;
+      top: 54px;
+      left: 310px;
+      width: 98px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .dialog-box {
+        height: 40px;
+      }
+
+      span {
+        color: @white;
+        position: absolute;
+        font-size: 15px;
+        padding-bottom: 4px;
+      }
+    }
+  }
+
+  .header-ctn {
+    padding: 26px 0 0 102px;
+
+    h1 {
+      color: @white;
+      font-size: 24px;
+      font-weight: 600;
+      margin: 2px 0;
+    }
+
+    h1:last-child {
+      color: @orange;
+    }
+  }
+
+  .banner-logo {
+    width: 278px;
+  }
+}
