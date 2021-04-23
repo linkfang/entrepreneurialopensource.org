@@ -1,22 +1,31 @@
 @import '_variables.less';
 
+@headerBlack: #050505;
+
 .jumbotron-custom {
-  background-image: url('../static/images/banner.png');
-  height: 366px;
-  background-size: cover;
+  & {
+    background-image: url('../static/images/banner.jpg');
+    height: 366px;
+    background-size: cover;
+    background-position: center;
+  }
 
   .logo-ctn {
-    padding: 62px 0 0 102px;
-
+    & {
+      padding: 62px 0 0 0;
+      position: relative;
+    }
     .guest-btn {
-      cursor: pointer;
-      position: absolute;
-      top: 54px;
-      left: 310px;
-      width: 98px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      & {
+        cursor: pointer;
+        position: absolute;
+        top: 54px;
+        left: 210px;
+        width: 98px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       .dialog-box {
         height: 40px;
@@ -32,7 +41,9 @@
   }
 
   .header-ctn {
-    padding: 26px 0 0 102px;
+    & {
+      padding: 26px 0 0 0;
+    }
 
     h1 {
       color: @white;
@@ -48,5 +59,147 @@
 
   .banner-logo {
     width: 280px;
+  }
+}
+
+.breadcrumb-custom {
+  & {
+    background-color: @orange;
+    display: flex;
+    height: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+    margin: 0 -15px;
+  }
+  @media (max-width: 768px) {
+    height: 70px;
+  }
+
+  .container {
+    & {
+      display: flex;
+      justify-content: space-between;
+    }
+    &:after,
+    &:before {
+      content: none;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column;
+      justify-content: space-evenly;
+    }
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+  }
+
+  .fa {
+    margin-left: 20px;
+    margin-right: 5px;
+    font-size: 24px;
+  }
+
+  .fa-google-podcast {
+    width: 24px;
+  }
+
+  .social-share {
+    img {
+      width: 24px;
+      margin-left: 20px;
+    }
+  }
+}
+
+.description-EOS,
+.rss-feeds,
+.the-hosts {
+  & {
+    margin: 0 -15px;
+  }
+
+  h2,
+  h3 {
+    font-weight: 800;
+    color: @headerBlack;
+    margin: 60px 0 35px 0;
+  }
+
+  p {
+    font-weight: 500;
+  }
+}
+
+.rss-feeds{
+  &{
+    margin-bottom: 40px;
+  }
+}
+
+.the-hosts {
+  & {
+    background-color: #eaeae5;
+  }
+
+  .img-responsive {
+    border-radius: 50%;
+    width: 170px;
+  }
+
+  .eclipsefdn-user-bios {
+    & > div {
+      & {
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+      }
+
+      h3 {
+        margin: 15px 0 20px 0;
+      }
+
+      .eclipsefdn-user-bios-picture {
+        padding-right: 0;
+      }
+
+      .eclipsefdn-user-bios-info {
+        padding: 0;
+      }
+    }
+  }
+
+  .container {
+    padding-bottom: 40px;
+  }
+}
+
+.eclipse-logo-ctn {
+  & {
+    background-color: @orange;
+    margin: 0 -15px;
+    display: flex;
+    justify-content: center;
+  }
+
+  img {
+    width: 280px;
+  }
+}
+
+#back-to-top {
+  position: relative;
+  bottom: 146px;
+}
+
+#solstice-footer {
+  padding-top: 45px !important;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100% !important;
   }
 }
