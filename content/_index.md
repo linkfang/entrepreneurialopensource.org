@@ -46,5 +46,5 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 
 
 {{<grid/div class="eclipse-logo-ctn" isMarkdown="false">}}
-<img src="./images/EF_registered_wht.png" />
+<img src="./images/EF_registered_wht.png" alt="Eclipse logo"/>
 {{</grid/div>}}
