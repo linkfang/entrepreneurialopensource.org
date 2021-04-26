@@ -7,7 +7,7 @@
     background-image: url('../static/images/banner.jpg');
     height: 366px;
     background-size: cover;
-    background-position: center;
+    background-position: left;
   }
 
   .logo-ctn {
@@ -50,10 +50,9 @@
       font-size: 30px;
       font-weight: 600;
       margin: 2px 0;
-    }
-
-    h1:last-child {
-      color: @orange;
+      span {
+        color: @orange;
+      }
     }
   }
 
@@ -91,9 +90,25 @@
     }
   }
 
-  p {
-    display: flex;
-    align-items: center;
+  ul {
+    & {
+      display: flex;
+      align-items: center;
+      list-style-type: none;
+      padding-left: 0;
+    }
+    a {
+      display: flex;
+      align-items: center;
+      color: @white;
+      &:hover {
+        text-decoration: none;
+        border-bottom: none;
+        span {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   .fa {
@@ -133,10 +148,8 @@
   }
 }
 
-.rss-feeds{
-  &{
-    margin-bottom: 60px;
-  }
+.rss-feeds {
+  margin-bottom: 60px;
 }
 
 .the-hosts {
