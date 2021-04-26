@@ -13,34 +13,37 @@ container: 'container-fluid'
 
 {{< breadcrumb >}}
 
+
 {{<grid/div class="description-EOS" isMarkdown="false">}}
 {{<grid/div class="container">}}
-
 ## Entrepreneurial Open Source Podcast
 
 The Entrepreneurial Open Source Podcast features successful entrepreneurs and innovators from around the globe, sharing practical lessons about how they have built their businesses through open source participation and leadership.
+{{</grid/div>}}
+{{</grid/div>}}
 
-{{</grid/div>}}
-{{</grid/div>}}
 
 {{<grid/div class="rss-feeds" isMarkdown="false">}}
-{{<grid/div class="container">}}
-
-## RSS Feeds
-
-To be added.
-
+{{<grid/div class="container" isMarkdown="false">}}
+<h2>RSS Feeds</h2>
+{{<grid/div id="buzzsprout-small-player-1740291" isMarkdown="false">}}
+<script
+  type="text/javascript"
+  charset="utf-8"
+  src="https://www.buzzsprout.com/1740291.js?container_id=buzzsprout-large-small-1740291&player=small"
+></script>
 {{</grid/div>}}
 {{</grid/div>}}
+{{</grid/div>}}
+
 
 {{<grid/div class="the-hosts" isMarkdown="false">}}
 {{<grid/div class="container" isMarkdown="false">}}
-
 <h2>The Hosts</h2>
 {{< events/user_bios source = "hosts">}}
+{{</grid/div>}}
+{{</grid/div>}}
 
-{{</grid/div>}}
-{{</grid/div>}}
 
 {{<grid/div class="eclipse-logo-ctn" isMarkdown="false">}}
 <img src="./images/EF_registered_wht.png" />
