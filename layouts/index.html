@@ -5,7 +5,7 @@
     <div class="logo-ctn">
       <img
         class="banner-logo"
-        src="./images/bannerlogo.png"
+        src="{{ "/images/bannerlogo.png" | absURL }}"
         alt="Entrepreneurial Open Source"
       />
       <a
@@ -13,19 +13,23 @@
         target="_blank"
         href="https://docs.google.com/forms/d/e/1FAIpQLSeM9Wh9KsvppT0IFvq5nONIFFXZOqgbNP_Pl__X-saDq4qYcQ/viewform?usp=sf_link"
       >
-        <img
+        <!-- <img
           class="dialog-box"
           src="./images/dialogBox.svg"
           alt="Be a guest button"
-        />
-        <span>Be A Guest</span>
+        /> -->
+        <span class="dialog-box">
+          <span class="dialog-arrow"></span>
+          <span>Be A Guest</span>
+        </span>
+        
       </a>
     </div>
     <div class="header-ctn">
       <h1>
         Entrepreneurs at the <br />
         Intersection of <br />
-        <span> Open Source and Business </span>
+        <span class="brand-primary"> Open Source and Business </span>
       </h1>
     </div>
   </div>
