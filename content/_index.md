@@ -31,13 +31,6 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 ></script>
 {{</grid/div>}}
 
-{{<grid/div id="buzzsprout-large-player-1740291" isMarkdown="false">}}
-<script
-  type="text/javascript"
-  charset="utf-8"
-  src="https://www.buzzsprout.com/1740291.js?container_id=buzzsprout-large-1740291&player=large"
-></script>
-{{</grid/div>}}
 
 {{</grid/section-container>}}
 
@@ -48,5 +41,6 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 
 
 {{<grid/div class="eclipse-logo-ctn" isMarkdown="false">}}
+<p class="sponsor-text">Sponsored by:<p>
 <img src="/images/EF_registered_wht.png" alt="Eclipse logo"/>
 {{</grid/div>}}
