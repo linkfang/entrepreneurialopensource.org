@@ -1,7 +1,5 @@
 @import '_variables.less';
 
-@headerBlack: #050505;
-
 .jumbotron-custom {
   & {
     background-image: url('../static/images/banner.jpg');
@@ -25,18 +23,38 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        text-decoration: none;
       }
 
       .dialog-box {
-        height: 40px;
+        & {
+          background-color: @brand-primary;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 32px;
+          width: 90px;
+          color: @white;
+          font-size: 15px;
+          font-weight: 400;
+          border-radius: 3px;
+        }
+
+        .dialog-arrow {
+          position: absolute;
+          bottom: -5px;
+          left: calc(50% - 5px); // This is for IE11
+          background-color: @brand-primary;
+          width: 10px;
+          height: 10px;
+          transform: rotate(45deg);
+        }
       }
 
-      span {
-        color: @white;
-        position: absolute;
-        font-size: 15px;
-        padding-bottom: 4px;
-      }
+      // span {
+      //   color: @white;
+      //   position: absolute;
+      // }
     }
   }
 
@@ -50,9 +68,6 @@
       font-size: 30px;
       font-weight: 600;
       margin: 2px 0;
-      span {
-        color: @orange;
-      }
     }
   }
 
@@ -61,9 +76,9 @@
   }
 }
 
-.breadcrumb-custom {
+.social-banner {
   & {
-    background-color: @orange;
+    background-color: @brand-primary;
     display: flex;
     height: 50px;
     font-size: 16px;
@@ -71,8 +86,9 @@
     color: white;
     margin: 0 -15px;
   }
+
   @media (max-width: 768px) {
-    height: 70px;
+    height: 100px;
   }
 
   .container {
@@ -84,10 +100,21 @@
     &:before {
       content: none;
     }
+
+    .social-media-options {
+      display: flex;
+      align-items: center;
+    }
+
     @media (max-width: 768px) {
       flex-direction: column;
       justify-content: space-evenly;
     }
+
+    // this is for IE11
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      justify-content: space-around;
+      }
   }
 
   ul {
@@ -111,13 +138,14 @@
     }
   }
 
-  .fa {
+  .fa,
+  .google-podcast-img {
     margin-left: 20px;
     margin-right: 5px;
     font-size: 24px;
   }
 
-  .fa-google-podcast {
+  .google-podcast-img {
     width: 24px;
   }
 
@@ -126,10 +154,35 @@
       width: 24px;
       margin-left: 20px;
     }
+
+    .small-icon {
+      & {
+        width: 24px;
+        height: 24px;
+        margin-left: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .fa {
+        font-size: 14px;
+        color: @brand-primary;
+        margin: 0;
+      }
+
+      .email-thick {
+        font-weight: 600;
+      }
+    }
+
+    .inverted {
+      background-color: @white;
+    }
   }
 }
 
-.description-EOS,
+.description-eos,
 .rss-feeds,
 .the-hosts {
   & {
@@ -139,7 +192,7 @@
   h2,
   h3 {
     font-weight: 800;
-    color: @headerBlack;
+    color: @header-black;
     margin: 60px 0 35px 0;
   }
 
@@ -162,25 +215,21 @@
     width: 170px;
   }
 
-  .eclipsefdn-user-bios {
-    & > div {
-      & {
-        display: flex;
-        align-items: center;
-        padding: 12px 0;
-      }
+  .eclipsefdn-user-bios > div {
+    & {
+      padding: 12px 0;
+    }
 
-      h3 {
-        margin: 15px 0 20px 0;
-      }
+    h3 {
+      margin: 15px 0 20px 0;
+    }
 
-      .eclipsefdn-user-bios-picture {
-        padding-right: 0;
-      }
+    .eclipsefdn-user-bios-picture {
+      padding-right: 0;
+    }
 
-      .eclipsefdn-user-bios-info {
-        padding: 0;
-      }
+    .eclipsefdn-user-bios-info {
+      padding: 0;
     }
   }
 
@@ -191,7 +240,7 @@
 
 .eclipse-logo-ctn {
   & {
-    background-color: @orange;
+    background-color: @brand-primary;
     margin: 0 -15px;
     display: flex;
     justify-content: center;
@@ -207,12 +256,13 @@
   bottom: 146px;
 }
 
-#solstice-footer {
-  padding-top: 45px !important;
+footer#solstice-footer {
+  padding-top: 45px;
 }
 
 @media (max-width: 1199px) {
-  .container {
-    width: 100% !important;
+  .container,
+  .social-banner .container {
+    width: 100%;
   }
 }
