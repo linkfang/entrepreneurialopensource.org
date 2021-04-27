@@ -22,7 +22,6 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 
 
 {{<grid/section-container class="rss-feeds" isMarkdown="false">}}
-<h2>RSS Feeds</h2>
 {{<grid/div id="buzzsprout-small-player-1740291" isMarkdown="false">}}
 <script
   type="text/javascript"
