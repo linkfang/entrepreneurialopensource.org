@@ -20,7 +20,6 @@ image: /images/banner.jpg
 The Entrepreneurial Open Source Podcast features successful entrepreneurs and innovators from around the globe, sharing practical lessons about how they have built their businesses through open source participation and leadership.
 {{</grid/section-container>}}
 
-
 {{<grid/section-container class="rss-feeds" isMarkdown="false">}}
 {{<grid/div id="buzzsprout-small-player-1740291" isMarkdown="false">}}
 <script
@@ -29,9 +28,8 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
   src="https://www.buzzsprout.com/1740291.js?container_id=buzzsprout-small-1740291&player=small"
 ></script>
 {{</grid/div>}}
-
-
 {{</grid/section-container>}}
+
 
 {{<grid/section-container class="the-hosts" isMarkdown="false">}}
 <h2>The Hosts</h2>
@@ -42,4 +40,15 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 {{<grid/div class="eclipse-logo-ctn" isMarkdown="false">}}
 <p class="sponsor-text">Sponsored by:<p>
 <img src="/images/EF_registered_wht.png" alt="Eclipse logo"/>
+{{</grid/div>}}
+
+
+{{<grid/div isMarkdown="false">}}
+<script type="text/javascript" charset="utf-8">
+  document.addEventListener("DOMContentLoaded", ()=>{
+    let linkedInSocialBtn = document.querySelectorAll(".fa-linkedin")
+    linkedInSocialBtn = linkedInSocialBtn[linkedInSocialBtn.length - 1].parentNode
+    linkedInSocialBtn.href = "https://www.linkedin.com/company/eclipse-foundation/mycompany/"
+  })
+</script>
 {{</grid/div>}}
