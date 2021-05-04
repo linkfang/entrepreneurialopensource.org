@@ -14,13 +14,10 @@ image: /images/banner.jpg
 
 {{< social-banner >}}
 
-{{<grid/section-container class="description-eos" isMarkdown="true">}}
-## Entrepreneurial Open Source Podcast
-
-The Entrepreneurial Open Source Podcast features successful entrepreneurs and innovators from around the globe, sharing practical lessons about how they have built their businesses through open source participation and leadership.
-{{</grid/section-container>}}
+{{< first-paragraph >}}
 
 {{<grid/section-container class="rss-feeds" isMarkdown="false">}}
+<h2>Episodes</h2>
 {{<grid/div id="buzzsprout-small-player-1740291" isMarkdown="false">}}
 <script
   type="text/javascript"
@@ -38,7 +35,6 @@ The Entrepreneurial Open Source Podcast features successful entrepreneurs and in
 
 
 {{<grid/div class="eclipse-logo-ctn" isMarkdown="false">}}
-<p class="sponsor-text">Sponsored by:<p>
 <img src="/images/EF_registered_wht.png" alt="Eclipse logo"/>
 {{</grid/div>}}
 

@@ -3,23 +3,31 @@
 .jumbotron-custom {
   & {
     background-image: url('../static/images/banner.jpg');
-    height: 500px;
+    height: 66vh;
+    min-height: 400px;
+    max-height: 650px;
     background-size: cover;
     background-position: 0% 20%;
   }
 
+  .jumbotron-title-ctn {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .logo-ctn {
     & {
-      padding: 145px 0 0 0;
+      padding-bottom: 10px;
       position: relative;
     }
     .guest-btn {
       & {
         cursor: pointer;
         position: absolute;
-        top: 140px;
-        left: 210px;
-        width: 98px;
+        top: -10px;
+        left: 265px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -32,10 +40,10 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 32px;
-          width: 90px;
+          height: 44px;
+          width: 220px;
           color: @white;
-          font-size: 15px;
+          font-size: 20px;
           font-weight: 400;
           border-radius: 3px;
         }
@@ -67,7 +75,7 @@
   }
 
   .banner-logo {
-    width: 280px;
+    width: 420px;
   }
 }
 
@@ -196,9 +204,63 @@
   }
 }
 
+.description-eos .first-paragraph {
+  & {
+    display: flex;
+    align-items: center;
+  }
+  .sponsor-ctn {
+    & {
+      margin-left: 40px;
+      background-color: gray;
+      border-radius: 3px;
+      box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.12);
+    }
+    .sponsor-eclipse {
+      & {
+        width: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(#fcfcfc, #d8d1d1);
+      }
+      .ef-logo-ctn {
+        height: 50px;
+        overflow-y: hidden;
+        display: flex;
+        align-items: center;
+      }
+      .ef-gry-logo {
+        width: 124px;
+      }
+      p {
+        font-size: 15px;
+        padding-top: 10px;
+      }
+    }
+    .become-sponsor-btn {
+      font-size: 17px;
+      text-align: center;
+      background-color: @brand-primary;
+      color: white;
+      padding: 4px 0;
+      width: 100%;
+      border: none;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+    }
+  }
+}
+
 .rss-feeds {
-  margin-top: 35px;
-  margin-bottom: 60px;
+  & {
+    margin-top: 35px;
+    margin-bottom: 60px;
+  }
+  #buzzsprout-small-player-1740291 {
+    width: calc(100% - 220px);
+  }
 }
 
 .the-hosts {
@@ -259,9 +321,33 @@ footer#solstice-footer {
   padding-top: 45px;
 }
 
+#copyright {
+  color: white;
+  font-weight: 100;
+}
+
+.social-media i {
+  color: white;
+}
+
 @media (max-width: 1199px) {
   .container,
   .social-banner .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .description-eos .first-paragraph {
+    & {
+      flex-direction: column;
+    }
+    .sponsor-ctn {
+      margin: 16px 0;
+    }
+  }
+
+  .rss-feeds #buzzsprout-small-player-1740291 {
     width: 100%;
   }
 }
