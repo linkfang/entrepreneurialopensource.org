@@ -258,11 +258,8 @@
     margin-top: 60px;
     margin-bottom: 60px;
   }
-  h2{
+  h2 {
     margin: 0 0 35px 0;
-  }
-  #buzzsprout-small-player-1740291 {
-    width: calc(100% - 220px);
   }
 }
 
@@ -317,7 +314,7 @@
 
 #back-to-top {
   position: relative;
-  bottom: 186px;
+  bottom: 146px;
 }
 
 footer#solstice-footer {
@@ -346,11 +343,24 @@ footer#solstice-footer {
       flex-direction: column;
     }
     .sponsor-ctn {
-      margin: 16px 0;
+      margin: 24px 0;
     }
   }
 
   .rss-feeds #buzzsprout-small-player-1740291 {
     width: 100%;
+  }
+}
+
+// For IE11
+@media (max-width: 768px) and (-ms-high-contrast: none),
+  (-ms-high-contrast: active) {
+  .description-eos .first-paragraph {
+    & {
+      display: block;
+    }
+    .sponsor-ctn {
+      width: 180px;
+    }
   }
 }
