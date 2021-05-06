@@ -1,6 +1,6 @@
 baseurl = "https://www.entrepreneurialopensource.org/"
 DefaultContentLanguage = "en"
-title = "entrepreneurialopensource.org"
+title = "Entrepreneurial Open Source Podcast"
 theme = "eclipsefdn-hugo-solstice-theme"
 metaDataFormat = "yaml"
 googleAnalytics = "UA-910670-30"
@@ -11,9 +11,9 @@ pluralizeListTitles = false
 
 [Params]
   google_tag_manager = "GTM-5WLCZXC"
-  description = ""
+  description = "The Entrepreneurial Open Source Podcast features successful entrepreneurs and innovators from around the globe, sharing practical lessons about how they have built their businesses through open source participation and leadership."
   seo_title_suffix = " | The Eclipse Foundation"
-  keywords = []
+  keywords = ["entrepreneurial", "open source", "podcast"]
  # logo = ""
  # favicon = ""
  # share_img = ""
