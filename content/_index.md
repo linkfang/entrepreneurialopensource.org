@@ -1,5 +1,6 @@
 ---
-title: "entrepreneurialopensource.org"
+title: "Entrepreneurial Open Source Podcast"
+seo_title: "Entrepreneurial Open Source Podcast"
 description: "The Entrepreneurial Open Source Podcast features successful entrepreneurs and innovators from around the globe, sharing practical lessons about how they have built their businesses through open source participation and leadership."
 date: 2021-04-20T10:00:00-04:00
 hide_page_title: true
