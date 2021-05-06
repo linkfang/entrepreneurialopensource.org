@@ -1,6 +1,6 @@
 [build]
 publish = "public"
-command = "npm run build_netlify && hugo --gc --minify -b https://eclipsefdn-entrepreneurialopensource.netlify.com"
+command = "npm run build_netlify && hugo --gc --minify -b https://entrepreneurialopensource.org"
 
 [build.environment]
 NODE_VERSION = "12.18.3"
