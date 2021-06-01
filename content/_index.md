@@ -20,6 +20,11 @@ image: /images/banner.jpg
 {{<grid/section-container class="rss-feeds" isMarkdown="false">}}
 <h2>Episodes</h2>
 {{<grid/div id="buzzsprout-small-player-1740291" isMarkdown="false">}}
+<script 
+  type="text/javascript"
+  charset="utf-8"
+  src="https://www.buzzsprout.com/1740291/8624400-entrepreneurial-open-source-podcast-frank-gielissen-glenn-ergeerts-aloxy.js?container_id=buzzsprout-player-8624400&player=small"
+  ></script>
 <script
   type="text/javascript"
   charset="utf-8"
